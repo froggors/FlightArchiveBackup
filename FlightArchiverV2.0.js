@@ -1,6 +1,6 @@
 function main() {
     const apiUrl = "https://data.gov.il/api/3/action/datastore_search?resource_id=e83f763b-b7d7-479e-b172-ae981ddc6de5";
-    const sheetId = "1RfPIYIngPxwQHmmSI4Non5AYJBYQPD84W3GuWysCLaQ";
+    const sheetId = "[Sheet ID]";
     const batchSize = 500;
   
     let offset = 0;
@@ -74,7 +74,7 @@ function main() {
     }
   }
   
-  function removeDuplicatesBasedOnMultipleColumns(sheetId = "1RfPIYIngPxwQHmmSI4Non5AYJBYQPD84W3GuWysCLaQ") {
+  function removeDuplicatesBasedOnMultipleColumns(sheetId = "[Sheet ID]") {
     const spreadsheet = SpreadsheetApp.openById(sheetId);
     const sheet = spreadsheet.getSheetByName("Sheet1");
     const dataRange = sheet.getDataRange();
